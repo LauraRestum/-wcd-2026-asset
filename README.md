@@ -58,6 +58,8 @@ Read **[`manifest.json`](manifest.json)** — a machine-readable index of every 
 │   └── candid-moments/           Candid, close-up, and human-interest shots
 ├── brand/                        Brand/marketing imagery (building exterior, logo video)
 ├── email-banners/                Ready-made 1200×300 email header banners (see Premade assets)
+├── social/                       Ready-to-post social graphics
+│   └── sponsor-thank-you/        Per-sponsor "thank you to our sponsor" square posts (2160×2160)
 └── email/                        The thank-you email template + its 7 image assets
 ```
 
