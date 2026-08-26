@@ -446,7 +446,7 @@ window.WCDW_MANIFEST = {
       "type": "image",
       "dimensions": "2000x1414",
       "thumbnail": "dashboard/thumbnails/brand/wcdw-logo-clean-fifth-third.jpg",
-      "description": "Official 2026 event logo, clean version: 'Walk for Independence, White Cane Day Walk' with white-cane motif, Envision and Dallas Zoo lockups, and 'Presented by Fifth Third Bank'. Hosted for emails at https://laurarestum.github.io/envision-wcdw-media-guide/assets/logos/white-cane-day-walk-logo.png",
+      "description": "Official 2026 event logo, clean version: 'Walk for Independence, White Cane Day Walk' with white-cane motif, Envision and Dallas Zoo lockups, and 'Presented by Fifth Third Bank'. Hosted for emails at https://mcusercontent.com/6e3f0d354d8de00f19f8da328/images/54993659-8d7e-2470-e7ab-147c1998de92.png",
       "tags": [
         "brand",
         "logo",
