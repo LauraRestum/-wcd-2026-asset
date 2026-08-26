@@ -139,7 +139,7 @@ Read **[`manifest.json`](manifest.json)** — a machine-readable index of every 
 | --- | --- |
 | `envision-dallas-building-exterior.png` | Clean exterior photo of the Envision Dallas building (brown brick, blue/green logo signage) under a blue sky. |
 | `wcdw-messaging-toolkit-v3.pdf` | The official 2026 Messaging Toolkit (14 pages): the "White Cane. I Can." platform, voice, approved copy, audiences and phases. Exported from Canva (WCDW_Messaging_Toolkit_v3); downloadable from the Studio's asset library and the dashboard. |
-| `wcdw-logo-clean-fifth-third.png` | Official 2026 event logo, clean version (2000×1414) with the "Presented by Fifth Third Bank" lockup. Hosted for emails at `https://mcusercontent.com/6e3f0d354d8de00f19f8da328/images/54993659-8d7e-2470-e7ab-147c1998de92.png` — every email footer uses that URL. |
+| `wcdw-logo-clean-fifth-third-bank.png` | Official 2026 event logo, clean version (2000×1414) with the "Presented by Fifth Third Bank" lockup. Hosted for emails at `https://mcusercontent.com/6e3f0d354d8de00f19f8da328/images/54993659-8d7e-2470-e7ab-147c1998de92.png` — every email footer uses that URL. |
 | `wcdw-logo-mockup-zoo-animals.png` | 2026 event logo mockup (2000×1414) with Dallas Zoo flavor: green elephants, a hanging monkey and walkers with white canes. |
 | `white-cane-day-logo-animation.mp4` | Animated hero/background video (1280×720, ~52 s, H.264): the "Celebrating Independence — White Cane Day Walk — Dallas Zoo" logo animating in. |
 
