@@ -6,7 +6,7 @@
   ],
   "headers": [
     {
-      "source": "/(dashboard/thumbnails|event-photos|email|email-banners|social|brand)/(.*)",
+      "source": "/(dashboard/thumbnails|event-photos|email|email-banners|social|brand|fonts)/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
