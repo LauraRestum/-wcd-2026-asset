@@ -6,7 +6,16 @@
 <title>WCDW Asset Dashboard — Envision Dallas White Cane Day Walk</title>
 <meta name="description" content="Browse, search, and download photo, brand, and email assets for the Envision Dallas Celebrating Independence: White Cane Day Walk at the Dallas Zoo (2026).">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c5cab'/%3E%3Cpath d='M9 22 L20 8' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Ccircle cx='21' cy='7' r='2.5' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+  /* Self-hosted Montserrat from this repo's fonts/ — these weights load from our own
+     files even offline; 500/600/700 still come from the Google Fonts link above */
+  @font-face{font-family:'Montserrat';font-style:normal;font-weight:100;font-display:swap;src:url('fonts/Montserrat-Thin.ttf') format('truetype')}
+  @font-face{font-family:'Montserrat';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/Montserrat-Regular.ttf') format('truetype')}
+  @font-face{font-family:'Montserrat';font-style:normal;font-weight:800;font-display:swap;src:url('fonts/Montserrat-ExtraBold.ttf') format('truetype')}
+  @font-face{font-family:'Montserrat';font-style:normal;font-weight:900;font-display:swap;src:url('fonts/Montserrat-Black.ttf') format('truetype')}
   :root {
     /* Surfaces & ink (light) */
     --page:        #f9f9f7;
@@ -75,7 +84,7 @@
   body {
     background: var(--page);
     color: var(--ink);
-    font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font: 15px/1.55 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
   a { color: var(--accent); }
