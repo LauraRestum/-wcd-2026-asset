@@ -438,12 +438,12 @@
       ]
     },
     {
-      "path": "brand/wcdw-logo-clean-fifth-third.png",
-      "filename": "wcdw-logo-clean-fifth-third.png",
+      "path": "brand/wcdw-logo-clean-fifth-third-bank.png",
+      "filename": "wcdw-logo-clean-fifth-third-bank.png",
       "category": "brand",
       "type": "image",
       "dimensions": "2000x1414",
-      "thumbnail": "dashboard/thumbnails/brand/wcdw-logo-clean-fifth-third.jpg",
+      "thumbnail": "dashboard/thumbnails/brand/wcdw-logo-clean-fifth-third-bank.jpg",
       "description": "Official 2026 event logo, clean version: 'Walk for Independence, White Cane Day Walk' with white-cane motif, Envision and Dallas Zoo lockups, and 'Presented by Fifth Third Bank'. Hosted for emails at https://mcusercontent.com/6e3f0d354d8de00f19f8da328/images/54993659-8d7e-2470-e7ab-147c1998de92.png",
       "tags": [
         "brand",
@@ -744,12 +744,12 @@
       ]
     },
     {
-      "path": "social/facebook-event-cover.jpg",
-      "filename": "facebook-event-cover.jpg",
+      "path": "social/facebook-event-cover-v2.jpg",
+      "filename": "facebook-event-cover-v2.jpg",
       "category": "social",
       "type": "image",
       "dimensions": "851x315",
-      "thumbnail": "dashboard/thumbnails/social/facebook-event-cover.jpg",
+      "thumbnail": "dashboard/thumbnails/social/facebook-event-cover-v2.jpg",
       "description": "Facebook event cover (851x315): the \u2018Walk for Independence \u2014 White Cane Day Walk\u2019 logo on a soft green background with navy zoo-animal silhouettes, the Saturday Oct. 17, 2026 Dallas Zoo 5\u20137 PM date and \u2018Presented by Fifth Third Bank\u2019.",
       "tags": [
         "social",
@@ -845,12 +845,12 @@
       ]
     },
     {
-      "path": "social/sponsor-thank-you/01-fifth-third-presenting.png",
-      "filename": "01-fifth-third-presenting.png",
+      "path": "social/sponsor-thank-you/01-fifth-third-presenting-v2.png",
+      "filename": "01-fifth-third-presenting-v2.png",
       "category": "sponsor-thank-you",
       "type": "image",
       "dimensions": "2160x2160",
-      "thumbnail": "dashboard/thumbnails/social/sponsor-thank-you/01-fifth-third-presenting.jpg",
+      "thumbnail": "dashboard/thumbnails/social/sponsor-thank-you/01-fifth-third-presenting-v2.jpg",
       "description": "Sponsor thank-you graphic (2160x2160 square): 'Thank you to our Presenting Sponsor' with the Fifth Third Bank logo on a white card, over the navy-to-green gradient, with the White Cane Day Walk logo and the Saturday Oct. 17, 2026 Dallas Zoo date at the bottom.",
       "tags": [
         "sponsor",
@@ -866,12 +866,12 @@
       ]
     },
     {
-      "path": "social/sponsor-thank-you/02-atmos-energy-white-cane.png",
-      "filename": "02-atmos-energy-white-cane.png",
+      "path": "social/sponsor-thank-you/02-atmos-energy-white-cane-v2.png",
+      "filename": "02-atmos-energy-white-cane-v2.png",
       "category": "sponsor-thank-you",
       "type": "image",
       "dimensions": "2160x2160",
-      "thumbnail": "dashboard/thumbnails/social/sponsor-thank-you/02-atmos-energy-white-cane.jpg",
+      "thumbnail": "dashboard/thumbnails/social/sponsor-thank-you/02-atmos-energy-white-cane-v2.jpg",
       "description": "Sponsor thank-you graphic (2160x2160 square): 'Thank you to our White Cane Sponsor' with the Atmos Energy logo on a white card, over the navy-to-green gradient, with the White Cane Day Walk logo and the Saturday Oct. 17, 2026 Dallas Zoo date at the bottom.",
       "tags": [
         "sponsor",
@@ -887,12 +887,12 @@
       ]
     },
     {
-      "path": "social/sponsor-thank-you/03-clampitt-paper-experience.png",
-      "filename": "03-clampitt-paper-experience.png",
+      "path": "social/sponsor-thank-you/03-clampitt-paper-experience-v2.png",
+      "filename": "03-clampitt-paper-experience-v2.png",
       "category": "sponsor-thank-you",
       "type": "image",
       "dimensions": "2160x2160",
-      "thumbnail": "dashboard/thumbnails/social/sponsor-thank-you/03-clampitt-paper-experience.jpg",
+      "thumbnail": "dashboard/thumbnails/social/sponsor-thank-you/03-clampitt-paper-experience-v2.jpg",
       "description": "Sponsor thank-you graphic (2160x2160 square): 'Thank you to our Experience Sponsor' with the Clampitt Paper logo on a white card, over the navy-to-green gradient, with the White Cane Day Walk logo and the Saturday Oct. 17, 2026 Dallas Zoo date at the bottom.",
       "tags": [
         "sponsor",
@@ -908,12 +908,12 @@
       ]
     },
     {
-      "path": "social/sponsor-thank-you/04-farmers-branch-experience.png",
-      "filename": "04-farmers-branch-experience.png",
+      "path": "social/sponsor-thank-you/04-farmers-branch-experience-v2.png",
+      "filename": "04-farmers-branch-experience-v2.png",
       "category": "sponsor-thank-you",
       "type": "image",
       "dimensions": "2160x2160",
-      "thumbnail": "dashboard/thumbnails/social/sponsor-thank-you/04-farmers-branch-experience.jpg",
+      "thumbnail": "dashboard/thumbnails/social/sponsor-thank-you/04-farmers-branch-experience-v2.jpg",
       "description": "Sponsor thank-you graphic (2160x2160 square): 'Thank you to our Experience Sponsor' with the City of Farmers Branch logo on a white card, over the navy-to-green gradient, with the White Cane Day Walk logo and the Saturday Oct. 17, 2026 Dallas Zoo date at the bottom.",
       "tags": [
         "sponsor",
@@ -929,12 +929,12 @@
       ]
     },
     {
-      "path": "social/sponsor-thank-you/05-hoya-vision-care-experience.png",
-      "filename": "05-hoya-vision-care-experience.png",
+      "path": "social/sponsor-thank-you/05-hoya-vision-care-experience-v2.png",
+      "filename": "05-hoya-vision-care-experience-v2.png",
       "category": "sponsor-thank-you",
       "type": "image",
       "dimensions": "2160x2160",
-      "thumbnail": "dashboard/thumbnails/social/sponsor-thank-you/05-hoya-vision-care-experience.jpg",
+      "thumbnail": "dashboard/thumbnails/social/sponsor-thank-you/05-hoya-vision-care-experience-v2.jpg",
       "description": "Sponsor thank-you graphic (2160x2160 square): 'Thank you to our Experience Sponsor' with the HOYA Vision Care logo on a white card, over the navy-to-green gradient, with the White Cane Day Walk logo and the Saturday Oct. 17, 2026 Dallas Zoo date at the bottom.",
       "tags": [
         "sponsor",
@@ -951,12 +951,12 @@
       ]
     },
     {
-      "path": "social/sponsor-thank-you/06-wfaa-media.png",
-      "filename": "06-wfaa-media.png",
+      "path": "social/sponsor-thank-you/06-wfaa-media-v2.png",
+      "filename": "06-wfaa-media-v2.png",
       "category": "sponsor-thank-you",
       "type": "image",
       "dimensions": "2160x2160",
-      "thumbnail": "dashboard/thumbnails/social/sponsor-thank-you/06-wfaa-media.jpg",
+      "thumbnail": "dashboard/thumbnails/social/sponsor-thank-you/06-wfaa-media-v2.jpg",
       "description": "Sponsor thank-you graphic (2160x2160 square): 'Thank you to our Media Sponsor' with the WFAA Channel 8 (ABC) logo on a white card, over the navy-to-green gradient, with the White Cane Day Walk logo and the Saturday Oct. 17, 2026 Dallas Zoo date at the bottom.",
       "tags": [
         "sponsor",
