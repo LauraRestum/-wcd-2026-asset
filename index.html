@@ -1113,7 +1113,7 @@ function buildElement(){
   if(k!=='cta'){const C=$('elColorOpts');C.innerHTML='';
     const palette=email?(k==='footer'
         ? [['auto','Auto'],['#ffffff','White'],['#78BE21','Green'],['#FFCF00','Gold']]
-        : [['auto','Auto'],['#002855','Navy'],['#3d7513','Green'],['#a37a00','Gold'],['#003087','Blue']])
+        : [['auto','Auto'],['#001852','Navy'],['#3d7513','Green'],['#a37a00','Gold'],['#003087','Blue']])
       : [['auto','Auto'],['#ffffff','White'],['#78BE21','Green'],['#FFCF00','Gold']];
     palette.forEach(([v,l])=>C.appendChild(opt(l,CL[k]===v,()=>{CL[k]=v;buildElement();render();})));}
   // Position — email: Align L/C/R; graphic: nudge arrows + recenter.
@@ -1214,7 +1214,7 @@ function render(){brandCheck();if(mode==='email')renderEmail();else renderGraphi
 /* Accessible text color on white: the brand green (and gold) fail WCAG as small
    text, so darken any accent used as text until it clears 4.5:1, keeping its hue. */
 function relLum(r,g,b){const f=u=>{u/=255;return u<=0.03928?u/12.92:Math.pow((u+0.055)/1.055,2.4);};return 0.2126*f(r)+0.7152*f(g)+0.0722*f(b);}
-function readableOnWhite(hex){let c=(hex||'').replace('#','');if(c.length===3)c=c.split('').map(x=>x+x).join('');if(c.length<6)return '#002855';
+function readableOnWhite(hex){let c=(hex||'').replace('#','');if(c.length===3)c=c.split('').map(x=>x+x).join('');if(c.length<6)return '#001852';
   let r=parseInt(c.slice(0,2),16),g=parseInt(c.slice(2,4),16),b=parseInt(c.slice(4,6),16),guard=0;
   while(1.05/(relLum(r,g,b)+0.05)<4.5&&guard++<40){r=Math.round(r*0.9);g=Math.round(g*0.9);b=Math.round(b*0.9);}
   return '#'+[r,g,b].map(x=>x.toString(16).padStart(2,'0')).join('');}
@@ -1240,7 +1240,7 @@ function emailHTML(o){
     top=img?`<tr><td><img src="${img}" width="600" alt="Walkers at the White Cane Day Walk" style="display:block;width:100%;height:auto"></td></tr>`
       :`<tr><td style="background:#dbe4f1;text-align:center;padding:56px 20px;color:#556275;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase">Image slot, paste a photo URL</td></tr>`;
   } else if(banner==='graphic'){
-    top=`<tr><td style="background:#002855;padding:36px 40px 30px">
+    top=`<tr><td style="background:#001852;padding:36px 40px 30px">
       <div style="font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:${accent}">White Cane Day Walk 2026</div>
       <div style="margin:12px 0 0;font-size:30px;line-height:1.12;font-weight:800;color:#fff;letter-spacing:-.02em">${h}</div>
     </td></tr>`;
@@ -1248,14 +1248,18 @@ function emailHTML(o){
   const bpad=banner==='graphic'?'26px':'14px';
   // Per-element email styling: size/weight/color/align/hide, from on-brand choices only.
   const ebDiv=emHidden.eyebrow?'':`<div style="font-size:${emFS('eyebrow',12)}px;font-weight:${emWeight.eyebrow};letter-spacing:.2em;text-transform:uppercase;color:${emCol('eyebrow',accW)};text-align:${emAlign.eyebrow}">Walk with us for independence</div>`;
-  const hDiv=emHidden.head?'':`<h1 style="margin:12px 0 0;font-size:${emFS('head',29)}px;line-height:1.14;font-weight:${emWeight.head};color:${emCol('head','#002855')};letter-spacing:-.02em;text-align:${emAlign.head}">${h}</h1>`;
+  const hDiv=emHidden.head?'':`<h1 style="margin:12px 0 0;font-size:${emFS('head',29)}px;line-height:1.14;font-weight:${emWeight.head};color:${emCol('head','#001852')};letter-spacing:-.02em;text-align:${emAlign.head}">${h}</h1>`;
   const headline=banner==='graphic'?'':((ebDiv||hDiv)?`<tr><td style="padding:34px 40px 6px">${ebDiv}${hDiv}</td></tr>`:'');
   const bodyRow=(!b||emHidden.body)?'':`<tr><td style="padding:${bpad} 40px 4px;font-size:${emFS('body',15)}px;line-height:1.7;font-weight:${emWeight.body};color:${emCol('body','#53565A')};text-align:${emAlign.body}">${b}</td></tr>`;
   const subRow=(sub&&!emHidden.sub)?`<tr><td style="padding:2px 40px 6px;font-size:${emFS('sub',13)}px;line-height:1.6;font-weight:${emWeight.sub};color:${emCol('sub','#6a7789')};text-align:${emAlign.sub}">${sub}</td></tr>`:'';
   const ctaRow=(cta&&!emHidden.cta)?`<tr><td style="padding:22px 40px 8px;text-align:${emAlign.cta}"><a href="${link}" style="display:inline-block;background:#003087;color:#fff;font-weight:${emWeight.cta};font-size:${emFS('cta',14)}px;text-decoration:none;padding:14px 30px;border-radius:6px">${cta}</a></td></tr>`:'';
   const metaRow=emHidden.meta?'':`<tr><td style="padding:12px 40px 28px;font-size:${emFS('meta',13)}px;font-weight:${emWeight.meta};color:${emCol('meta',accW)};text-align:${emAlign.meta}">${meta} · whitecanedaywalk.com</td></tr>`;
   const fundsDiv=emHidden.footer?'':`<div style="font-size:${emFS('footer',12)}px;color:${emCol('footer','rgba(255,255,255,.72)')};text-align:${emAlign.footer}">Funds raised support Envision’s work for people who are blind or have low vision across North Texas.</div>`;
-  return `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>White Cane Day Walk 2026</title></head><body style="margin:0;background:#eef2f8;font-family:Montserrat,Arial,sans-serif">
+  /* Load Montserrat inside the email document itself (same pattern as the premade
+     templates): the preview renders in a srcdoc iframe, which never sees the parent
+     page's fonts, so without this the live preview falls back to Arial. */
+  const fontHead=`<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><style>@font-face{font-family:'Montserrat';font-style:normal;font-weight:400;font-display:swap;src:url('${hostedUrl('fonts/Montserrat-Regular.ttf')}') format('truetype')}@font-face{font-family:'Montserrat';font-style:normal;font-weight:800;font-display:swap;src:url('${hostedUrl('fonts/Montserrat-ExtraBold.ttf')}') format('truetype')}body,table,td,a{font-family:'Montserrat',Helvetica,Arial,sans-serif}</style>`;
+  return `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>White Cane Day Walk 2026</title>${fontHead}</head><body style="margin:0;background:#eef2f8;font-family:'Montserrat',Helvetica,Arial,sans-serif">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="padding:22px 0"><tr><td align="center">
   <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="background:#fff;border-radius:12px;overflow:hidden;max-width:600px">
     <tr><td style="padding:0;font-size:0;line-height:0"><table width="100%" cellpadding="0" cellspacing="0"><tr><td width="22%" height="6" style="background:#78BE21">&nbsp;</td><td height="6" style="background:#003087">&nbsp;</td></tr></table></td></tr>
@@ -1265,7 +1269,7 @@ function emailHTML(o){
     ${subRow}
     ${ctaRow}
     ${metaRow}
-    <tr><td style="background:#002855;padding:22px 40px;color:#fff;font-size:12px;line-height:1.65">
+    <tr><td style="background:#001852;padding:22px 40px;color:#fff;font-size:12px;line-height:1.65">
       <table role="presentation" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto 14px auto"><tr><td style="background-color:#ffffff;border-radius:12px;padding:12px 20px"><img src="https://mcusercontent.com/6e3f0d354d8de00f19f8da328/images/54993659-8d7e-2470-e7ab-147c1998de92.png" alt="Walk for Independence: White Cane Day Walk, presented by Fifth Third Bank. Envision, Dallas Zoo." width="180" style="display:block;width:180px;max-width:100%;height:auto;border:0"></td></tr></table>
       ${fundsDiv}
       <div style="color:rgba(255,255,255,.5);margin-top:12px">Envision, Dallas Campus &middot; 1801 Valley View Lane &middot; Farmers Branch, TX 75234</div>
@@ -1306,7 +1310,7 @@ function measureHead(ctx,text,mw){
   return best||greedy;
 }
 function roundRect(ctx,x,y,w,h,r){r=Math.min(r,w/2,h/2);ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
-function textOn(hex){const c=(hex||'').replace('#','');if(c.length<6)return '#fff';const r=parseInt(c.slice(0,2),16),g=parseInt(c.slice(2,4),16),b=parseInt(c.slice(4,6),16);return (0.299*r+0.587*g+0.114*b)>150?'#002855':'#ffffff';}
+function textOn(hex){const c=(hex||'').replace('#','');if(c.length<6)return '#fff';const r=parseInt(c.slice(0,2),16),g=parseInt(c.slice(2,4),16),b=parseInt(c.slice(4,6),16);return (0.299*r+0.587*g+0.114*b)>150?'#001852':'#ffffff';}
 function drawArt(ctx,w,ht,head,sub,meta,acc,imgEl,cta){
   cta=cta||'';
   ctx.clearRect(0,0,w,ht);
@@ -1323,7 +1327,9 @@ function drawArt(ctx,w,ht,head,sub,meta,acc,imgEl,cta){
     sc.addColorStop(.7,'rgba(0,16,46,'+ov(.46)+')');sc.addColorStop(1,'rgba(0,16,46,'+ov(.96)+')');
     ctx.fillStyle=sc;ctx.fillRect(0,0,w,ht);
   }else{
-    ctx.fillStyle='#002855';ctx.fillRect(0,0,w,ht);
+    /* #001852 is the campaign's deep navy: whitecanedaywalk.com and the approved
+       banner/social graphics all sit on it (the lighter #002855 read as off-shade). */
+    ctx.fillStyle='#001852';ctx.fillRect(0,0,w,ht);
     const gr=ctx.createRadialGradient(w*.85,0,0,w*.85,0,w*.7);gr.addColorStop(0,'rgba(65,182,230,.28)');gr.addColorStop(1,'rgba(65,182,230,0)');ctx.fillStyle=gr;ctx.fillRect(0,0,w,ht);
   }
   ctx.fillStyle=acc;ctx.fillRect(0,0,w*.22,7);ctx.fillRect(0,0,7,ht*.22);
@@ -1374,7 +1380,9 @@ function drawArt(ctx,w,ht,head,sub,meta,acc,imgEl,cta){
   if(ftText&&!elHidden.footer){ctx.fillStyle=elCol('footer','rgba(255,255,255,.82)');ctx.font=elWeight.footer+' '+wmF+'px Montserrat';ctx.fillText(ftText,px('footer'),py('footer',wmY));}
   ctx.textAlign='left';ctx.textBaseline='alphabetic';
 }
-function loadArtFonts(){return Promise.all([document.fonts.load('600 40px Montserrat'),document.fonts.load('700 40px Montserrat'),document.fonts.load('800 40px Montserrat')]);}
+/* Load every weight the per-element editor can pick (400–800): a weight the canvas
+   paints before it's loaded silently falls back to the default sans, not Montserrat. */
+function loadArtFonts(){return Promise.all(['400','500','600','700','800'].map(w=>document.fonts.load(w+' 40px Montserrat')));}
 const _imgCache={};
 function loadImg(src){return new Promise(res=>{src=(src||'').trim();
   if(!src){res(null);return;}
