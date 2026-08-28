@@ -357,14 +357,15 @@ window.WCDW_MANIFEST = {
       "type": "image",
       "dimensions": "7087x4725",
       "thumbnail": "dashboard/thumbnails/event-photos/candid-moments/guest-waving-lanyard.jpg",
-      "description": "A smiling, balding man in a dark polo and lanyard waves at the camera during the event.",
+      "description": "The Mayor of Farmers Branch smiles and waves to the camera during the event.",
       "tags": [
         "candid",
         "waving",
         "smiling",
-        "lanyard",
         "portrait",
-        "attendee"
+        "mayor",
+        "Farmers Branch",
+        "VIP"
       ]
     },
     {
