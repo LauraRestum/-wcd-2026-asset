@@ -128,7 +128,7 @@ Read **[`manifest.json`](manifest.json)** — a machine-readable index of every 
 
 | File | What it shows |
 | --- | --- |
-| `guest-waving-lanyard.jpg` | A smiling, balding man in a dark polo and lanyard waves at the camera during the event. |
+| `guest-waving-lanyard.jpg` | The Mayor of Farmers Branch smiles and waves to the camera during the event. |
 | `attendees-hug-at-concession-stand.jpg` | Two women share a warm hug in front of a Pepsi/Dole Whip concession stand; a baby in a stroller at left. |
 | `volunteer-handing-treat-to-child.jpg` | A volunteer bends down to hand a treat to a delighted young boy in blue near a shaded path. |
 | `white-cane-closeup-sneaker-keychain.jpg` | Close-up of a hand gripping a white cane, a small sneaker keychain tied to the grip; crowd blurred behind. |
